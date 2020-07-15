@@ -11,5 +11,9 @@ module.exports = {
       outputStyle: 'expanded',
       includePaths: ['./node_modules'],
     },
+  },
+  js: {
+    source: ['js/components/**/*.js', 'js/components/*.js'],
+    destination: 'js',
   }
 };
