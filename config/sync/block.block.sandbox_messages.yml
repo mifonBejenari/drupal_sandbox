@@ -1,4 +1,4 @@
-uuid: 8d515962-1907-49fc-9495-dc0d3e388e1b
+uuid: f8abec54-6a12-47f0-8783-37c397b67351
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: sandbox_messages
 theme: sandbox
-region: header
+region: content
 weight: 0
 provider: null
 plugin: system_messages_block

@@ -1,4 +1,4 @@
-uuid: 66f92be5-4c08-48d4-8428-bb72334f7c51
+uuid: e1ae6333-4ffc-42fa-a4d0-f4051a1ac1f9
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: sandbox_content
 theme: sandbox
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: system_main_block
 settings:

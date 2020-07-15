@@ -1,4 +1,4 @@
-uuid: bf0b385d-b4b7-4301-b9be-e47788d7b00f
+uuid: dc029068-9c26-4e88-a2bb-f932f6c4b613
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: sandbox_page_title
 theme: sandbox
 region: content
-weight: -50
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

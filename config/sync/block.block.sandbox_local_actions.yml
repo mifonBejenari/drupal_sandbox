@@ -1,4 +1,4 @@
-uuid: d91712d2-16a0-47df-a9ce-38da938a9de6
+uuid: 01979670-7931-4270-9bee-52fa96692fb9
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: sandbox_local_actions
 theme: sandbox
 region: content
-weight: -20
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:

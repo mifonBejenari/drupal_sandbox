@@ -1,4 +1,4 @@
-uuid: b419aff6-d8a3-4818-8c72-30c06b4d9bbb
+uuid: c399926c-60ea-4b12-a0ca-c18668147f60
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: sandbox_local_tasks
 theme: sandbox
 region: content
-weight: -40
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

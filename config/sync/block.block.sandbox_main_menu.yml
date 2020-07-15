@@ -1,4 +1,4 @@
-uuid: e9a3d633-3bde-4303-88ac-2383d0762b38
+uuid: 4114dd00-49ef-48d5-a91a-c8f2b699bc67
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: sandbox_main_menu
 theme: sandbox
-region: header
-weight: 0
+region: content
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

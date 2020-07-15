@@ -1,4 +1,4 @@
-uuid: 9ca2f1d2-612a-4ca6-9d8a-e3b3e59d1a98
+uuid: 3a96c931-0c99-4c2d-9470-f9a398954123
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: sandbox_footer
 theme: sandbox
-region: header
-weight: 0
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

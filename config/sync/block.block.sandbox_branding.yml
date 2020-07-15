@@ -1,4 +1,4 @@
-uuid: c066e02c-0431-4d78-9fce-6836b9eef6b9
+uuid: 020f3f51-bd05-402f-860d-d3409a765732
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: sandbox_branding
 theme: sandbox
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
