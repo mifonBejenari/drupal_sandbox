@@ -1,0 +1,22 @@
+uuid: 37cfb540-e651-4bd8-8edf-654ea8905273
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sandbox
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: sandbox_help
+theme: sandbox
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

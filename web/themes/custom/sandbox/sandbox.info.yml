@@ -1,0 +1,10 @@
+name: Sandbox
+type: theme
+description: 'A Sandbox theme.'
+core: 8.x
+base theme: bartik
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer

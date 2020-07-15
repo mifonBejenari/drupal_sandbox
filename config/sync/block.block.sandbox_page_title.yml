@@ -1,0 +1,20 @@
+uuid: bf0b385d-b4b7-4301-b9be-e47788d7b00f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sandbox
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: sandbox_page_title
+theme: sandbox
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

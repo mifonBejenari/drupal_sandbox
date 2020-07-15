@@ -1,0 +1,22 @@
+uuid: 66f92be5-4c08-48d4-8428-bb72334f7c51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sandbox
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: sandbox_content
+theme: sandbox
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
