@@ -51,9 +51,12 @@ fin drush ${SITE_ALIAS} updatedb -y
 echo "Importing configurations..."
 fin drush ${SITE_ALIAS} config-import -y
 
-# Create admin alias
-echo -e "${green_bg} Step 5 ${NC}${green} Create admin alias...${NC}"
+# Generate links
+echo -e "${green_bg} Step 5 ${NC}${green} Generate links...${NC}"
 fin drush ${SITE_ALIAS} cr
+
+echo -e "Open ${yellow}http://${VIRTUAL_HOST}${NC} in your browser to verify the setup."
+echo -e "${green_bg} OR ${NC}${yellow} Login as Admin.${NC}"
 fin drush uli
 
 echo -e "${green_bg} DONE! ${NC}${green} Completed all initialization steps.${NC}"
