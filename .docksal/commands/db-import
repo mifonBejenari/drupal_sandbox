@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## Import database from a .sql file
+##
+## Usage: fin db-import
+##
+## Examples:
+##
+## fin db-import
+
+cd "${PROJECT_ROOT}"
+
+dump="./dump/dump-null-site.sql"
+
+fin db import ${dump}

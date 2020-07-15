@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Run commands from the theme folder.
+cd ${PROJECT_ROOT}/${DOCROOT}/themes/custom/sandbox
+
+echo "Initializing npm dependencies..."
+npm install
+
+echo "Compiling CSS..."
+./node_modules/.bin/gulp build

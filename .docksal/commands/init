@@ -32,6 +32,30 @@ echo -e "${green_bg} Step 2 ${NC}${green} Initializing site...${NC}"
 # This runs inside cli using http://docs.docksal.io/en/v1.4.0/fin/custom-commands/#executing-commands-inside-cli
 fin init-site
 
+# Theme initialization
+echo -e "${green_bg} Step 3 ${NC}${green} Initializing theme...${NC}"
+fin theme-build
+
+# Import site settings
+echo -e "${green_bg} Step 4 ${NC}${green} Import site settings...${NC}"
+
+echo "Import database..."
+fin db-import
+
+echo "Clear caches..."
+fin drush ${SITE_ALIAS} cr
+
+echo "Running database updates..."
+fin drush ${SITE_ALIAS} updatedb -y
+
+echo "Importing configurations..."
+fin drush ${SITE_ALIAS} config-import -y
+
+# Create admin alias
+echo -e "${green_bg} Step 5 ${NC}${green} Create admin alias...${NC}"
+fin drush ${SITE_ALIAS} cr
+fin drush uli
+
 echo -e "${green_bg} DONE! ${NC}${green} Completed all initialization steps.${NC}"
 
 #-------------------------- END: Execution --------------------------------
