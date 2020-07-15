@@ -4,5 +4,10 @@
  */
 
 module.exports = function defaultTask(gulp) {
-  gulp.task('default', ['build']);
+  gulp.task('default', (done) => {
+    gulp.series(
+      'build',
+    );
+    done();
+  });
 };
