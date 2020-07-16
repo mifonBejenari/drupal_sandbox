@@ -36,6 +36,8 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  sandbox_react: 0
+  sandbox_theme: 0
   search: 0
   shortcut: 0
   system: 0

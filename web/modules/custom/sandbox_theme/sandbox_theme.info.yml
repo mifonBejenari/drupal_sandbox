@@ -1,0 +1,4 @@
+name: 'Sandbox Theme'
+description: 'Sandbox theme components.'
+type: module
+core: 8.x
