@@ -20,6 +20,7 @@ const plugins = require('gulp-load-plugins')({
 require('./gulp-tasks/tasks/styles')(gulp, plugins, config);
 require('./gulp-tasks/tasks/scripts')(gulp, plugins, config);
 require('./gulp-tasks/tasks/lint')(gulp, plugins, config);
+require('./gulp-tasks/tasks/prettier')(gulp, plugins, config);
 
 //  Watcher task.
 require('./gulp-tasks/tasks/watch')(gulp, plugins, config);
