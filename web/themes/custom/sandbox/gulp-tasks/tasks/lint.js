@@ -4,19 +4,20 @@
  */
 
 module.exports = function lintTask(gulp, plugins, config) {
-  const { gulpEslint: eslint } = plugins;
-  gulp.task('lint:sass', () =>
-    gulp.src(config.sass.source).pipe(plugins.gulpStylelint({
+  gulp.task('lintSass', () =>
+    gulp
+      .src(config.sass.source)
+      .pipe(plugins.gulpStylelint({
       reporters: [{ formatter: 'string', console: true }],
     })));
 
-  gulp.task('lint:js', () =>
+  gulp.task('lintJs', () =>
     gulp
       .src(config.js.source)
-      .pipe(eslint())
-      .pipe(eslint.format())
-      .pipe(eslint.failAfterError())
+      .pipe(plugins.gulpEslint())
+      .pipe(plugins.gulpEslint.format())
+      .pipe(plugins.gulpEslint.failAfterError())
   );
 
-  gulp.task('lint', ['lint:sass', 'lint:js']);
+  gulp.task('lint', gulp.series('lintSass', 'lintJs'));
 };

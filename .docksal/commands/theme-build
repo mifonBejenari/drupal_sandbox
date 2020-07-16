@@ -6,5 +6,5 @@ cd ${PROJECT_ROOT}/${DOCROOT}/themes/custom/sandbox
 echo "Initializing npm dependencies..."
 npm install
 
-echo "Compiling CSS..."
+echo "Compiling theme..."
 ./node_modules/.bin/gulp build

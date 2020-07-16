@@ -5,7 +5,7 @@
 
 module.exports = {
   sass: {
-    source: ['styles/scss/**/*.scss'],
+    source: 'styles/scss/**/*.scss',
     destination: 'styles/css',
     options: {
       outputStyle: 'expanded',
