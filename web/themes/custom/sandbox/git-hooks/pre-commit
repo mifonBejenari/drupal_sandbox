@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+ROOT_DIR="$(pwd)"/web/themes/custom/sandbox
+LIST=$( git diff --cached --name-only --diff-filter=ACM "${ROOT_DIR}/js/**/*.js" "${ROOT_DIR}/styles/scss/**/*.scss" | tr '\n' ' ' )
+PASS=true
+
+if [[ -n "$LIST" ]]; then
+  cd ${ROOT_DIR} && gulp pre-commit
+  if [[ "$?" -ne 0 ]]; then
+    PASS=false
+  fi
+fi
+
+if ! $PASS; then
+  printf "sandbox has errors. Please fix before committing.\n"
+  exit 1
+fi

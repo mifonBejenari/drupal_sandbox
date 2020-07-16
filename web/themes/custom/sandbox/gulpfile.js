@@ -26,7 +26,9 @@ require('./gulp-tasks/tasks/prettier')(gulp, plugins, config);
 require('./gulp-tasks/tasks/watch')(gulp, plugins, config);
 
 //  Build task.
-require('./gulp-tasks/tasks/build')(gulp, plugins, config);
+require('./gulp-tasks/tasks/build')(gulp);
 
 //  Default task.
-require('./gulp-tasks/tasks/default')(gulp, plugins, config);
+require('./gulp-tasks/tasks/default')(gulp);
+
+require('./gulp-tasks/tasks/pre-commit')(gulp);
