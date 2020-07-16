@@ -1,12 +1,15 @@
+/**
+ * @file
+ *
+ * @type {*|Gulp}
+ */
+
 const gulp = require('gulp');
 const config = require('./gulp-tasks/config');
 
 //  Call all plugins from package.json.
 const plugins = require('gulp-load-plugins')({
   pattern: '*',
-  rename: {
-    'run-sequence': 'runSequence',
-  },
 });
 
 //  Main tasks.

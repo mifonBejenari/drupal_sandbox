@@ -3,11 +3,13 @@
  * Task: Build.
  */
 
-module.exports = function buildTask(gulp, plugins) {
-  gulp.task('build', (done) => {
+module.exports = function buildTask(gulp) {
+  gulp.task('build',
     gulp.series(
-      ['styles', 'scripts'],
-    );
-    done();
-  });
+      'styles',
+      'scripts',
+      (done) => {
+        done();
+      }
+  ));
 };
